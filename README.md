@@ -1,29 +1,30 @@
-# Uni-One Social Network
+# GlowCare Gambia E-commerce Platform
 
-This repository contains a prototype for **Uni-One**, a mobile-first Pan-African social networking platform built with FastAPI and Next.js.
+This repository contains a minimal skeleton for **GlowCare Gambia**, an e-commerce project built with FastAPI and Next.js.
 
 ## Backend
 
-The backend lives in `backend/` and uses FastAPI. Install dependencies and run with:
+The backend resides in `glowcare_gambia/` and uses FastAPI with SQLAlchemy.
 
 ```bash
-pip install -r backend/requirements.txt
-uvicorn backend.app.main:app --reload
+pip install -r glowcare_gambia/requirements.txt
+uvicorn glowcare_gambia.app.main:app --reload
 ```
+
+The API exposes product and category endpoints and seeds the database with sample skincare products on startup.
 
 ## Frontend
 
-The frontend lives in `frontend/` and is a minimal Next.js app. Install dependencies and run with:
+The frontend lives in `glowcare_frontend/` and is a Next.js app styled with TailwindCSS.
 
 ```bash
-cd frontend
+cd glowcare_frontend
 npm install
 npm run dev
 ```
 
-## Features
+The home page displays the GlowCare Gambia branding.
 
-- User, post and group endpoints in FastAPI
-- Simple React pages as a starting point
+***
 
-This is a starting point for the Uni-One application.
+This is a starting point for the GlowCare Gambia application.
